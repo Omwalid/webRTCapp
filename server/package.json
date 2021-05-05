@@ -1,0 +1,18 @@
+{
+  "name": "web_rtc_app",
+  "version": "1.0.0",
+  "description": "video chat app with webRTC",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "omwalid",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.1",
+    "uuid": "^8.3.2"
+  }
+}

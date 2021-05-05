@@ -1,0 +1,16 @@
+version: "3"
+services:
+  webrtc_front:
+    depends_on:
+    - webrtc_back
+    image: omwalid/webrtcapp_front:v1.1.4
+    container_name: webrtc_front
+    ports:
+    - 8080:80
+  
+  webrtc_back:
+    image: omwalid/webrtcapp_back:v1.1
+    container_name: webrtc_back
+    ports:
+    - 5000:5000
+    - 5001:5001
