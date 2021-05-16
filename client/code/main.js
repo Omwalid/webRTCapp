@@ -2,7 +2,8 @@ const socket = io("http://localhost:5000/");
 //connect to peerjs server that generate id for user
 const peer = new Peer(undefined, {
     host: 'localhost',
-    port: '5001'
+    port: '5000',
+    path: '/peerjs'
 })
 
 // enable join button after room_id input

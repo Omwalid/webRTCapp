@@ -4,7 +4,7 @@ const server = require('http').Server(app)
 const io = require('socket.io')(server, { cors: { origin: '*' } })
 const { v4: uuidv4 } = require('uuid');
 
-
+app.use('/peerjs', require('peer').ExpressPeerServer(server, {debug: true}))
 
 io.on('connection', socket => {
     socket.on('join-room', (room_id, user_id) => {
